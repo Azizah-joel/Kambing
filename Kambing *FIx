@@ -1,24 +1,29 @@
 # Kambing
 class Hewan:
-  def __init__(self, nama):
-    self.nama = nama
+    def __init__(self, nama):
+        self.nama = nama
 
-  def bersuara(self):
-    print(f"{self.nama} mengeluarkan suara umum hewan.")
+    def bersuara(self):
+        print(f"{self.nama} mengeluarkan suara umum hewan.")
 
 class Kambing(Hewan):
-  def__init__(self, nama, warna):
-    super().__init__(nama)
-    self.warna = warna
+    def __init__(self, nama, warna):
+        super().__init__(nama)
+        self.warna = warna
 
-  def bersuara(self):
-    print(f"{self.nama} bilang: Mbekk")
+    def bersuara(self):
+        print(f"{self.nama} bilang: Mbekk")
 
-  def info_tambahan(self):
-    print(f"{self.nama} adalah kambing berwarna {self.warna}.")
+    def info_tambahan(self):
+        print(f"{self.nama} adalah kambing berwarna {self.warna}.")
 
-  def interaksi_dengan_hewan(hewan_objek) :
-    print(f"Berinteraksi dengan {hewan_objek.nama} :")
-    hewan_objek.bersuara()
+    def interaksi_dengan_hewan(self, hewan_objek):
+        print(f"Berinteraksi dengan {hewan_objek.nama} :")
+        hewan_objek.bersuara()
+        if hasattr(hewan_objek, 'info_tambahan'):
+            hewan_objek.info_tambahan()
+        print("_" * 20)
 
-Moly = Kambing("Moly", "Putih")
+kiki = Kambing("Kiki", "Putih")
+kiki.bersuara()
+kiki.info_tambahan()
