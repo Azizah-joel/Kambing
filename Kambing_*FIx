@@ -1,5 +1,5 @@
 class Hewan:
-    def __init__(self, nama, warna):
+    def __init__(self, nama, warna="tidak diketahui"):
         self.nama = nama
         self.warna = warna
 
@@ -11,7 +11,7 @@ class Hewan:
 
 
 class Kambing(Hewan):
-    def __init__(self, nama, warna):
+    def __init__(self, nama, warna="Putih"):
         super().__init__(nama, warna)
 
     def bersuara(self):
@@ -24,12 +24,13 @@ class Kambing(Hewan):
         print(f"Berinteraksi dengan {hewan_objek.nama} :")
         hewan_objek.bersuara()
 
-        if hasattr(hewan_objek, 'info_tambahan'):
+        if hasattr(hewan_objek, "info_tambahan"):
             hewan_objek.info_tambahan()
 
         print("_" * 20)
 
 
-kiki = Kambing("Kiki", "Putih")
-kiki.bersuara()
-kiki.info_tambahan()
+if __name__ == "__main__":
+    kiki = Kambing("Kiki", "Putih")
+    kiki.bersuara()
+    kiki.info_tambahan()
