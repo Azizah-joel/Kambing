@@ -6,7 +6,7 @@ class Hewan:
     print(f"{self.nama} mengeluarkan suara umum hewan.")
 
 class Kambing(Hewan):
-  def__init__(self, nama, warna):
+  def __init__(self, nama, warna):
     super().__init__(nama)
     self.warna = warna
 
