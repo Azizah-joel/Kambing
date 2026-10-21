@@ -20,8 +20,5 @@ class Kambing(Hewan):
   def interaksi_dengan_hewan(hewan_objek) :
     print(f"Berinteraksi dengan {hewan_objek.nama} :")
     hewan_objek.bersuara()
-  if hasattr(hewan_objek, 'info_tambahan') :
-    hewan_objek.info_tambahan()
-  print("_" *20)
 
-kiki = Kucing("Kiki", "Putih")
+Moly = Kambing("Moly", "Putih")
