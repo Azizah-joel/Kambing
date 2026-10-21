@@ -10,7 +10,7 @@ class Kambing(Hewan):
     super().__init__(nama)
     self.warna = warna
 
-  def bersuran(self):
+  def bersuara(self):
     print(f"{self.nama} bilang: Mbekk")
 
   def info_tambahan(self):
